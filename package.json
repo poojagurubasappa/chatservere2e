@@ -1,0 +1,28 @@
+{
+  "name": "chatserverapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start",
+    "start": "concurrently npm:start:server npm:start:client",
+    "pkg_server": "cd server && npm i",
+    "pkg_client": "cd client && npm i",
+    "install": "npm run pkg_server && npm run pkg_client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poojagurubasappa/chatserverapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poojagurubasappa/chatserverapp/issues"
+  },
+  "homepage": "https://github.com/poojagurubasappa/chatserverapp#readme",
+  "dependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
